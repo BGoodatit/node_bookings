@@ -1,0 +1,214 @@
+:root {
+    --square-sans-text: "Square Sans Text VF", "Square Sans Text", helvetica,
+      arial, sans-serif;
+    --square-sans-display: "Square Sans Display VF", "Square Sans Display",
+      helvetica, arial, sans-serif;
+  }
+  @font-face {
+    font-family: "Square Sans Text";
+    src: url("square-text/SquareSansText-Regular.woff2") format("woff2"),
+      url("square-text/SquareSansText-Regular.woff") format("woff"),
+      url("square-text/SquareSansText-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Square Sans Text";
+    src: url("square-text/SquareSansText-Italic.woff2") format("woff2"),
+      url("square-text/SquareSansText-Italic.woff") format("woff"),
+      url("square-text/SquareSansText-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Square Sans Text";
+    src: url("square-text/SquareSansText-Medium.woff2") format("woff2"),
+      url("square-text/SquareSansText-Medium.woff") format("woff"),
+      url("square-text/SquareSansText-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Square Sans Text";
+    src: url("square-text/SquareSansText-MediumItalic.woff2") format("woff2"),
+      url("square-text/SquareSansText-MediumItalic.woff") format("woff"),
+      url("square-text/SquareSansText-MediumItalic.ttf") format("truetype");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Square Sans Text";
+    src: url("square-text/SquareSansText-SemiBold.woff2") format("woff2"),
+      url("square-text/SquareSansText-SemiBold.woff") format("woff"),
+      url("square-text/SquareSansText-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Square Sans Text";
+    src: url("square-text/SquareSansText-SemiBoldItalic.woff2") format("woff2"),
+      url("square-text/SquareSansText-SemiBoldItalic.woff") format("woff"),
+      url("square-text/SquareSansText-SemiBoldItalic.ttf") format("truetype");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Square Sans Text";
+    src: url("square-text/SquareSansText-Bold.woff2") format("woff2"),
+      url("square-text/SquareSansText-Bold.woff") format("woff"),
+      url("square-text/SquareSansText-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Square Sans Text";
+    src: url("square-text/SquareSansText-BoldItalic.woff2") format("woff2"),
+      url("square-text/SquareSansText-BoldItalic.woff") format("woff"),
+      url("square-text/SquareSansText-BoldItalic.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+  }
+  @supports (font-variation-settings: normal) {
+    @font-face {
+      font-family: "Square Sans Text VF";
+      src: url("square-text/SquareSansText-Upright-VF.woff2")
+          format("woff2 supports variations"),
+        url("square-text/SquareSansText-Upright-VF.woff2")
+          format("woff2-variations");
+      font-weight: 400 700;
+      font-style: normal;
+      font-display: swap;
+    }
+  }
+  @supports (font-variation-settings: normal) {
+    @font-face {
+      font-family: "Square Sans Text VF";
+      src: url("square-text/SquareSansText-Italic-VF.woff2")
+          format("woff2 supports variations"),
+        url("square-text/SquareSansText-Italic-VF.woff2")
+          format("woff2-variations");
+      font-weight: 400 700;
+      font-style: italic;
+      font-display: swap;
+    }
+  }
+  @font-face {
+    font-family: "Square Sans Display";
+    src: url("square-display/SquareSansDisplay-Regular.woff2") format("woff2"),
+      url("square-display/SquareSansDisplay-Regular.woff") format("woff"),
+      url("square-display/SquareSansDisplay-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Square Sans Display";
+    src: url("square-display/SquareSansDisplay-RegularCondensed.woff2")
+        format("woff2"),
+      url("square-display/SquareSansDisplay-RegularCondensed.woff") format("woff"),
+      url("square-display/SquareSansDisplay-RegularCondensed.ttf")
+        format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: 75%;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Square Sans Display";
+    src: url("square-display/SquareSansDisplay-RegularExpanded.woff2")
+        format("woff2"),
+      url("square-display/SquareSansDisplay-RegularExpanded.woff") format("woff"),
+      url("square-display/SquareSansDisplay-RegularExpanded.ttf")
+        format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: 125%;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Square Sans Display";
+    src: url("square-display/SquareSansDisplay-Medium.woff2") format("woff2"),
+      url("square-display/SquareSansDisplay-Medium.woff") format("woff"),
+      url("square-display/SquareSansDisplay-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Square Sans Display";
+    src: url("square-display/SquareSansDisplay-MediumCondensed.woff2")
+        format("woff2"),
+      url("square-display/SquareSansDisplay-MediumCondensed.woff") format("woff"),
+      url("square-display/SquareSansDisplay-MediumCondensed.ttf")
+        format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: 75%;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Square Sans Display";
+    src: url("square-display/SquareSansDisplay-MediumExpanded.woff2")
+        format("woff2"),
+      url("square-display/SquareSansDisplay-MediumExpanded.woff") format("woff"),
+      url("square-display/SquareSansDisplay-MediumExpanded.ttf")
+        format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: 125%;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Square Sans Display";
+    src: url("square-display/SquareSansDisplay-Bold.woff2") format("woff2"),
+      url("square-display/SquareSansDisplay-Bold.woff") format("woff"),
+      url("square-display/SquareSansDisplay-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Square Sans Display";
+    src: url("square-display/SquareSansDisplay-BoldCondensed.woff2")
+        format("woff2"),
+      url("square-display/SquareSansDisplay-BoldCondensed.woff") format("woff"),
+      url("square-display/SquareSansDisplay-BoldCondensed.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: 25%;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Square Sans Display";
+    src: url("square-display/SquareSansDisplay-BoldExpanded.woff2")
+        format("woff2"),
+      url("square-display/SquareSansDisplay-BoldExpanded.woff") format("woff")
+        url("square-display/SquareSansDisplay-BoldExpanded.ttf")
+        format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: 125%;
+    font-display: swap;
+  }
+  @supports (font-variation-settings: normal) {
+    @font-face {
+      font-family: "Square Sans Display VF";
+      src: url("square-display/SquareSansDisplay-VF.woff2")
+          format("woff2 supports variations"),
+        url("square-display/SquareSansDisplay-VF.woff2")
+          format("woff2-variations");
+      font-weight: 400 700;
+      font-stretch: 75% 125%;
+      font-style: normal;
+      font-display: swap;
+    }
+  }
+  

@@ -4,14 +4,29 @@
   padding: .2em .2em 0;
   display: none;
   margin-bottom: 40px;
-  font-family: var(--square-sans-display);
+  font-family: "Busorama ITC Std";
+  font-weight: bold;
+  background:var(--bg);
+  
 }
 
 .ui-widget-header {
-  background: white;
+  background: #000000;
   border: none;
   border-bottom: 1px solid #EBEBEB;
-}
+background-image: linear-gradient(
+    to right,
+    #462523 0,
+    #cb9b51 22%,
+    #f6e27a 45%,
+    #f6f2c0 50%,
+    #f6e27a 55%,
+    #cb9b51 78%,
+    #462523 100%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;}
 
 .ui-datepicker .ui-datepicker-header {
   position: relative;
@@ -47,6 +62,7 @@
   font-weight: normal;
   align-items: center;
   justify-content: center;
+  
 }
 
 .ui-datepicker-prev::before {
@@ -90,11 +106,10 @@
 .ui-widget-content .ui-state-highlight,
 .ui-widget-header .ui-state-highlight
 html .ui-button.ui-state-disabled:hover {
-  border: 1px solid #EBEBEB;
-  background: white;
+  border: 1px solid transparent;
+  background: transparent;
   font-weight: 500;
-  color: black;
-  border-radius: 56px;
+  color: olive;
 }
 
 .ui-state-disabled,
@@ -104,14 +119,16 @@ html .ui-button.ui-state-disabled:hover {
 }
 .ui-state-default.ui-state-active,
 .ui-state-active {
-  border: 1px solid #007fff;
-  background: #007fff;
+  border: 1px solid transparent;
+  background: olive;
   font-weight: normal;
   color: #ffffff;
 }
 
 .ui-state-default:hover {
-  border-color: #007fff;
+  border-color: olive;
+  background:olive;
+  color:#ffffff;
 }
 
 .ui-datepicker .ui-datepicker-title {
@@ -148,8 +165,7 @@ html .ui-button.ui-state-disabled:hover {
   text-decoration: none;
 }
 
-@media only screen
-and (max-width: 1150px) {
+@media only screen and (max-width: 1150px) {
   .ui-datepicker {
     width: 100%;
   }
@@ -182,12 +198,5 @@ and (max-width: 1150px) {
     height: 20px;
   }
 
-  .ui-state-default,
-  .ui-widget-content .ui-state-default,
-  .ui-widget-header .ui-state-default,
-  .ui-button, .ui-state-highlight,
-  .ui-widget-content .ui-state-highlight,
-  .ui-widget-header .ui-state-highlight html .ui-button.ui-state-disabled:hover {
-    border-radius: 50%;
-  }
+ 
 }

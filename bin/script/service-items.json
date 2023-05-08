@@ -1,114 +1,176 @@
 {
-  "#HairColorTreatment": {
-    "id": "#HairColorTreatment",
-    "itemData": {
-      "description": "Leave-in treatment that will instantly intensify your hair color radiance. Will result in increased shine.",
-      "name": "Hair Color Treatment",
-      "productType": "APPOINTMENTS_SERVICE",
-      "variations": [
-        {
-          "id": "#RegularHairColorTreatment",
-          "itemVariationData": {
-            "availableForBooking": true,
-            "inventoryAlertType": "NONE",
-            "name": "Regular",
-            "priceMoney": {
-              "amount": 6400,
-              "currency": "CURRENCY"
-            },
-            "pricingType": "FIXED_PRICING",
-            "serviceDuration": 1800000
+  "items": [
+    {
+      "type": "ITEM",
+      "id": "F4L3KBRNJENBQQ5PD4L2S7UI",
+      "updated_at": "2023-05-07T16:05:16.665Z",
+      "created_at": "2023-05-07T14:55:18.571Z",
+      "version": 1683475516665,
+      "is_deleted": false,
+      "present_at_all_locations": true,
+      "item_data": {
+        "name": "Per hour",
+        "description": "My hourly rate is two hundred fifty dollars ($250) plus travel expenses for outcall (i.e., Uber, Lyft, travel). Three-hour sessions are seven hundred fifty dollars ($750), and overnight rates are a thousand five hundred dollars ($1,500).",
+        "abbreviation": "/hr",
+        "is_taxable": false,
+        "visibility": "PRIVATE",
+        "category_id": "7HZIOMWFJJZIK4GL6TISWGZY",
+        "variations": [
+          {
+            "type": "ITEM_VARIATION",
+            "id": "E2TBRPR5G5O6PFKVSA7OPZYH",
+            "updated_at": "2023-05-07T15:02:21.846Z",
+            "created_at": "2023-05-07T14:55:18.571Z",
+            "version": 1683471741846,
+            "is_deleted": false,
+            "present_at_all_locations": true,
+            "item_variation_data": {
+              "item_id": "F4L3KBRNJENBQQ5PD4L2S7UI",
+              "name": "I",
+              "ordinal": 1,
+              "pricing_type": "FIXED_PRICING",
+              "price_money": {
+                "amount": 25000,
+                "currency": "USD"
+              },
+              "service_duration": 3600000,
+              "available_for_booking": true,
+              "sellable": true,
+              "stockable": true,
+              "team_member_ids": [
+                "K90V1PPQY55MD"
+              ]
+            }
           },
-          "presentAtAllLocations": false,
-          "type": "ITEM_VARIATION"
-        }
-      ]
-    },
-    "presentAtAllLocations": false,
-    "type": "ITEM"
-  },
-  "#WomensHaircut": {
-    "id": "#WomensHaircut",
-    "itemData": {
-      "description": "Any women's haircut - examples include bobs, pixie, shag, bangs, layers, etc.",
-      "name": "Women's Haircut",
-      "productType": "APPOINTMENTS_SERVICE",
-      "variations": [
-        {
-          "id": "#RegularWomensHaircut",
-          "itemVariationData": {
-            "availableForBooking": true,
-            "inventoryAlertType": "NONE",
-            "name": "Regular",
-            "priceMoney": {
-              "amount": 3500,
-              "currency": "CURRENCY"
-            },
-            "pricingType": "FIXED_PRICING",
-            "serviceDuration": 1800000
+          {
+            "type": "ITEM_VARIATION",
+            "id": "KB3OPIGNZV6LJIRXF6AUXHIV",
+            "updated_at": "2023-05-07T15:02:21.846Z",
+            "created_at": "2023-05-07T15:02:21.846Z",
+            "version": 1683471741846,
+            "is_deleted": false,
+            "present_at_all_locations": true,
+            "item_variation_data": {
+              "item_id": "F4L3KBRNJENBQQ5PD4L2S7UI",
+              "name": "II",
+              "ordinal": 2,
+              "pricing_type": "FIXED_PRICING",
+              "price_money": {
+                "amount": 50000,
+                "currency": "USD"
+              },
+              "service_duration": 7200000,
+              "available_for_booking": true,
+              "sellable": true,
+              "stockable": true,
+              "team_member_ids": [
+                "K90V1PPQY55MD"
+              ]
+            }
           },
-          "presentAtAllLocations": false,
-          "type": "ITEM_VARIATION"
-        }
-      ]
-    },
-    "presentAtAllLocations": false,
-    "type": "ITEM"
-  },
-  "#MensHaircut": {
-    "id": "#MensHaircut",
-    "itemData": {
-      "description": "Any men's haircut - examples include blunt cut fringe, buzzcut, undercut, etc.",
-      "name": "Men's Haircut",
-      "productType": "APPOINTMENTS_SERVICE",
-      "variations": [
-        {
-          "id": "#RegularMensHaircut",
-          "itemVariationData": {
-            "availableForBooking": true,
-            "inventoryAlertType": "NONE",
-            "name": "Regular",
-            "priceMoney": {
-              "amount": 3000,
-              "currency": "CURRENCY"
-            },
-            "pricingType": "FIXED_PRICING",
-            "serviceDuration": 1800000
+          {
+            "type": "ITEM_VARIATION",
+            "id": "RPNIITH4ZNXIQ7JFWTT3CSGT",
+            "updated_at": "2023-05-07T15:02:21.846Z",
+            "created_at": "2023-05-07T15:02:21.846Z",
+            "version": 1683471741846,
+            "is_deleted": false,
+            "present_at_all_locations": true,
+            "item_variation_data": {
+              "item_id": "F4L3KBRNJENBQQ5PD4L2S7UI",
+              "name": "III",
+              "ordinal": 3,
+              "pricing_type": "FIXED_PRICING",
+              "price_money": {
+                "amount": 75000,
+                "currency": "USD"
+              },
+              "service_duration": 10800000,
+              "available_for_booking": true,
+              "sellable": true,
+              "stockable": true,
+              "team_member_ids": [
+                "K90V1PPQY55MD"
+              ]
+            }
           },
-          "presentAtAllLocations": false,
-          "type": "ITEM_VARIATION"
-        }
-      ]
-    },
-    "presentAtAllLocations": false,
-    "type": "ITEM"
-  },
-  "#ShampooAndBlowDry": {
-    "id": "#ShampooAndBlowDry",
-    "itemData": {
-      "description": "We will shampoo and blow dry your hair in a style that suits your hair and personality.",
-      "name": "Shampoo & Blow Dry",
-      "productType": "APPOINTMENTS_SERVICE",
-      "variations": [
-        {
-          "id": "#RegularShampooAndBlowDry",
-          "itemVariationData": {
-            "availableForBooking": true,
-            "inventoryAlertType": "NONE",
-            "name": "Regular",
-            "priceMoney": {
-              "amount": 4900,
-              "currency": "CURRENCY"
-            },
-            "pricingType": "FIXED_PRICING",
-            "serviceDuration": 1800000
+          {
+            "type": "ITEM_VARIATION",
+            "id": "6GSRIYP5GQNB4L2SPI62ED3S",
+            "updated_at": "2023-05-07T15:02:21.846Z",
+            "created_at": "2023-05-07T15:02:21.846Z",
+            "version": 1683471741846,
+            "is_deleted": false,
+            "present_at_all_locations": true,
+            "item_variation_data": {
+              "item_id": "F4L3KBRNJENBQQ5PD4L2S7UI",
+              "name": "IV",
+              "ordinal": 4,
+              "pricing_type": "FIXED_PRICING",
+              "price_money": {
+                "amount": 100000,
+                "currency": "USD"
+              },
+              "service_duration": 18000000,
+              "available_for_booking": false,
+              "sellable": true,
+              "stockable": true,
+              "team_member_ids": [
+                "K90V1PPQY55MD"
+              ]
+            }
           },
-          "presentAtAllLocations": false,
-          "type": "ITEM_VARIATION"
-        }
-      ]
-    },
-    "presentAtAllLocations": false,
-    "type": "ITEM"
-  }
+          {
+            "type": "ITEM_VARIATION",
+            "id": "4EM7AKTIAMWIU22AEEAXN5Z3",
+            "updated_at": "2023-05-07T15:26:34.154Z",
+            "created_at": "2023-05-07T15:26:34.154Z",
+            "version": 1683473194154,
+            "is_deleted": false,
+            "present_at_all_locations": true,
+            "item_variation_data": {
+              "item_id": "F4L3KBRNJENBQQ5PD4L2S7UI",
+              "name": "XII",
+              "ordinal": 5,
+              "pricing_type": "FIXED_PRICING",
+              "price_money": {
+                "amount": 150000,
+                "currency": "USD"
+              },
+              "service_duration": 43200000,
+              "available_for_booking": true,
+              "no_show_fee": {
+                "amount": 25000,
+                "currency": "USD"
+              },
+              "sellable": true,
+              "stockable": true,
+              "team_member_ids": [
+                "K90V1PPQY55MD"
+              ]
+            }
+          }
+        ],
+        "product_type": "APPOINTMENTS_SERVICE",
+        "skip_modifier_screen": false,
+        "ecom_visibility": "UNINDEXED",
+        "description_html": "<p>My hourly rate is two hundred fifty dollars ($250) plus travel expenses for outcall (i.e., Uber, Lyft, travel). Three-hour sessions are seven hundred fifty dollars ($750), and overnight rates are a thousand five hundred dollars ($1,500). </p>",
+        "description_plaintext": "My hourly rate is two hundred fifty dollars ($250) plus travel expenses for outcall (i.e., Uber, Lyft, travel). Three-hour sessions are seven hundred fifty dollars ($750), and overnight rates are a thousand five hundred dollars ($1,500).",
+        "location_overrides": [
+          {
+            "location_id": "Y27N30S938M79",
+            "ordinal": 0
+          }
+        ]
+      }
+    }
+  ],
+  "cursor": "",
+  "matched_variation_ids": [
+    "E2TBRPR5G5O6PFKVSA7OPZYH",
+    "KB3OPIGNZV6LJIRXF6AUXHIV",
+    "RPNIITH4ZNXIQ7JFWTT3CSGT",
+    "6GSRIYP5GQNB4L2SPI62ED3S",
+    "4EM7AKTIAMWIU22AEEAXN5Z3"
+  ]
 }
