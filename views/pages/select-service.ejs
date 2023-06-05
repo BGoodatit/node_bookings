@@ -1,39 +1,80 @@
-<% include("../functions") %>
-<html>
 
-<head>
-  <link href="/stylesheets/style.css" rel="stylesheet" type="text/css">
-</head>
+  <% include("../functions") %>
+  <html>
+    <head>
+      <title>Services | The Boyfriend Experience</title>
+      <meta charset="UTF-8">
+      <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+      <meta http-equiv="cleartype" content="on">
+      <meta name="HandheldFriendly" content="True">
+      <meta name="MobileOptimized" content="320">
+      <meta name="mobile-web-app-capable" content="yes">
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-title" content="The Boyfriend Experience">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black">
+      <link rel="pingback" href="#">
+      <link href="/stylesheets/style.css" rel="stylesheet" type="text/css">
+      <link type="text/css" href="../wp-content/themes/cwiz-wp-theme/style.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!--[if lt IE 9]>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+            <![endif]-->
+    
+      <script type="text/javascript">
+                    var _setInit = true;
+                    var _getDomainName = '../index.html';
+                    var _getStylesheetDirectoryUri = '../wp-content/themes/cwiz-wp-theme/index.html';  </script>
+      <script id="cwiz-bundle" type="text/javascript" src="../wp-content/themes/cwiz-wp-theme/js/libs.bundle.js"></script>
+      <meta name='robotQ1s' content='max-image-preview:large'><!-- This site is optimized with the Yoast SEO Premium plugin v13.5 - https://yoast.com/wordpress/plugins/seo/ -->
+      <meta name="description" content="View a list of services offered by The Boyfriend Experience.">
+      <meta property="og:locale" content="en_US">
+      <meta property="og:type" content="article">
+      <meta property="og:title" content="Services | the Boyfriend Experience">
+      <meta property="og:description" content="View a list of services offered by The Boyfriend Experience.">
+      <meta property="og:url" content="https://thebeauxartsdigital.com/services/">
+      <meta property="og:site_name" content="The Boyfriend Experience">
+      <meta name="twitter:card" content="summary">
+      <meta name="twitter:description" content="View a list of services offered by The Boyfriend Experience.">
+      <meta name="twitter:title" content="Services | the Boyfriend Experience">
+      <!-- / Yoast SEO Premium plugin. -->
+      <link rel='dns-prefetch' href='http://s.w.org/'>
+      <script type='text/javascript' src='/wp-includes/js/jquery/jquery.min9d52.js?ver=3.5.1' id='jquery-core-js'></script>
+      <script type='text/javascript' src='/wp-includes/js/jquery/jquery-migrate.mind617.js?ver=3.3.2' id='jquery-migrate-js'></script>
+    <link href="/stylesheets/style.css" rel="stylesheet" type="text/css">
+    <style>
+      html {
+    font-size: 16px;
+}
+@media (min-width:768px) {
+    font-size: 18px;
+}
+@media (min-width:1024px) {
+    font-size: 19px;
+}
+@media (min-width:1280px) {
+    font-size: 20px;
+}
+    </style>
+  </head>
+  
+  <body>
+    <header>
+      <%- include("../partials/header") %>
+    </header>
 
-<body>
-  <header>
-    <%- include("../partials/header") %>
-  </header>
-  <div class="content">
-      <%if (cancel === "success") { %>
-        <div class="success-toast">
-          <div>
-            <img src="/images/success.svg">Your booking was cancelled successfully!
+<body class="page-template page-template-page-Services page-template-page-Services-php page page-id-15 services">
+      <div class="contents__wrapper">
+        <div class="contents__block cblock1">
+          <h5>SERVICES</h5>
+          <div class="headercopy">
+            <p>My hourly rate is two hundred fifty dollars ($250) plus any travel expenses for outcall (i.e., Uber, Lyft, travel). Three-hour sessions are seven hundred fifty dollars ($750), and overnight rates are one thousand five hundred dollars ($1,500).</p>
           </div>
         </div>
-      <% } %>
-    </div>
-    <div class="contents__block cblock1">
-      <div style="opacity:1;transform: matrix(1, 0, 0, 1, 0, 0);flex-basis: 100%">
-        <h5>
-          <%if (location.description) { %>
-            <h5 style="margin:0 0 20px;padding:0;border:0;font:inherit;font-size:100%;vertical-align:baseline"> <%= location.description %> </h5>
-          <% } %>
-      </div>
-    </div>
-    <div class="content-main services">
-
-      <div class="cards">
-        <h3 style="opacity: 1;transform: matrix(1, 0, 0, 1, 0, 0); text-align: center;">
-          SERVICES
-        </h3>
-  
-        <% items.forEach(function(item) { %>
+        <div class="contents__block cblock2">
+          <ul class="grid-items">
+          <% items.forEach(function(item) { %>
           <% item.itemData.variations.forEach(function(variation) { %>
             <a href="/staff/<%= variation.id %>?version=<%= variation.version %>">
               <div class="card__wrapper">
@@ -72,6 +113,20 @@
       </div>
     </div>
   <% } %>
-</body>
+          </ul>
+        </div>
+      </div>
+    </section>
+	    <!-- contents end -->
 
-</html>
+		
+    <script id="cwiz-app" type="text/javascript" src="../wp-content/themes/cwiz-wp-theme/js/app.js"></script> 
+    <script>
+    (function () { var s = document.createElement('script'), e = !document.body ? document.querySelector('head') : document.body; s.src = 'https://acsbapp.com/apps/app/dist/js/app.js'; s.async = true; s.onload = function () { acsbJS.init({ statementLink: '', footerHtml: '', hideMobile: false, hideTrigger: false, language: 'en', position: 'right', leadColor: '#146FF8', triggerColor: '#146FF8', triggerRadius: '50%', triggerPositionX: 'right', triggerPositionY: 'bottom', triggerIcon: 'people', triggerSize: 'medium', triggerOffsetX: 20, triggerOffsetY: 20, mobile: { triggerSize: 'small', triggerPositionX: 'right', triggerPositionY: 'center', triggerOffsetX: 0, triggerOffsetY: 0, triggerRadius: '50%' } }); }; e.appendChild(s); }());
+    </script> 
+    <script type='text/javascript' src='../wp-content/plugins/advanced-custom-fields-viewer/js/acfv-frontendd988.js?ver=5.7.8' id='acfv_frontend_js-js'></script> 
+    
+
+		 
+	  </body>
+  </html>
