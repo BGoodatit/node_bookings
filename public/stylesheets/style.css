@@ -1,11 +1,22 @@
+
 @import url(https://square-fonts-production-f.squarecdn.com/square-sans.min.css);
 @import url(https://db.onlinewebfonts.com/c/c57167369179eae9caeb41c9cfd167a0?family=Busorama+ITC+Std);
 @import url('https://fonts.cdnfonts.com/css/riesling');
 @import url('https://fonts.cdnfonts.com/css/neutraface-text');
 @import url('https://fonts.cdnfonts.com/css/times-new-roman');
 @font-face {font-family: "Busorama ITC Std"; src: url("//db.onlinewebfonts.com/t/c57167369179eae9caeb41c9cfd167a0.eot"); src: url("//db.onlinewebfonts.com/t/c57167369179eae9caeb41c9cfd167a0.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/c57167369179eae9caeb41c9cfd167a0.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/c57167369179eae9caeb41c9cfd167a0.woff") format("woff"), url("//db.onlinewebfonts.com/t/c57167369179eae9caeb41c9cfd167a0.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/c57167369179eae9caeb41c9cfd167a0.svg#Busorama ITC Std") format("svg"); }
-  :root{
-    --bg: #101214;
+@font-face {
+  font-family: "Brilon";
+  src: local("Brilon"),
+    url(/fonts/Brilon-Regular/Brilon-Regular.otf) format("truetype");
+}
+@font-face {
+  font-family: "Lato-Light";
+  src: local("Lato-Light"),
+    url(/fonts/Lato-Light/Lato-Light.eot) format(embedded-opentype);
+}
+ :root{
+    --bg:#111111;
       --border: #22272B;
       --surface: #161A1D;
       --text-primary: #DEE4EA;
@@ -13,6 +24,8 @@
       --primary: #CB0A17;
       --text-inverse: #FFFFFF;
   }
+  body{background-color:#111}html body .logo_desktop_v{display:inline-block;background:url("https://thebfe.com/assets/svg/common/logo_desktop.svg") center center/cover no-repeat;transition:.6s}html body .logo_desktop_v:hover{transform:scale(.98);opacity:.5}.components.header__logo{opacity:0;position:relative;text-align:center;padding-top:60px;padding-bottom:40px}@media (max-width:799px){.components.header__logo{padding-bottom:60px}.components.header__logo .logo_desktop_v{display:none}}body.page-template-page-Services section.contents .contents__wrapper{max-width:1100px!important;padding-right:0!important;padding-left:0!important}a,div,img{margin:0;padding:0;border:0;font:inherit;font-size:100%;vertical-align:baseline}a img{border:none}html body a{color:#000;text-decoration:none;list-style:none}html body a:hover{color:#000}html body a:active,html body a:focus,html body img:active,html body img:focus{outline:0;border:0;-moz-outline-style:none;outline-style:none;}html body img{vertical-align:top}html body .cursor{cursor:pointer}html body .logo_mobile_v{display:inline-block;background:url("https://thebfe.com/assets/svg/common/logo_mobile.svg") center center/contain no-repeat}html body #sitewrapper .contents__wrapper{position:relative;max-width:1270px;margin:0 auto;padding:0 20px}#mobileIcon{position:absolute;top:12px;left:-4px;width:36px;height:36px}.components.header__mobile{z-index:999;position:fixed;top:0;left:0;text-align:center;width:100%;height:66px;background-color:#161a1d!important}@media (min-width:800px){#mobileIcon,.components.header__mobile{display:none}}.components.header__mobile .logo_mobile_v{margin-top:14px;margin-left:30px}div,section{margin:0;padding:0;border:0;font:inherit}@font-face{font-family:Lato-Light;src:url("https://thebeauxartsdigital.com/wp-content/themes/cwiz-wp-theme/fonts/Lato-Light.eot");src:url("https://thebeauxartsdigital.com/wp-content/themes/cwiz-wp-theme/fonts/Lato-Light.eot?#iefix") format("embedded-opentype"),url("https://thebeauxartsdigital.com/wp-content/themes/cwiz-wp-theme/fonts/Lato-Light.woff") format("woff"),url("https://thebeauxartsdigital.com/wp-content/themes/cwiz-wp-theme/fonts/Lato-Light.ttf") format("truetype"),url("https://thebeauxartsdigital.com/wp-content/themes/cwiz-wp-theme/fonts/Lato-Light.svg#ywftsvg") format("svg");font-weight:400;font-style:normal}@font-face{font-family:LibreBaskerville-Regular;src:url("https://thebeauxartsdigital.com/wp-content/themes/cwiz-wp-theme/fonts/LibreBaskerville-Regular.eot");src:url("https://thebeauxartsdigital.com/wp-content/themes/cwiz-wp-theme/fonts/LibreBaskerville-Regular.eot?#iefix") format("embedded-opentype"),url("https://thebeauxartsdigital.com/wp-content/themes/cwiz-wp-theme/fonts/LibreBaskerville-Regular.woff") format("woff"),url("https://thebeauxartsdigital.com/wp-content/themes/cwiz-wp-theme/fonts/LibreBaskerville-Regular.ttf") format("truetype"),url("https://thebeauxartsdigital.com/wp-content/themes/cwiz-wp-theme/fonts/LibreBaskerville-Regular.svg#ywftsvg") format("svg");font-weight:400;font-style:normal}div{font-size:100%;vertical-align:baseline}body section.contents .contents__wrapper{max-width:1100px!important;padding-right:0!important;padding-left:0!important}html body #sitewrapper .contents__wrapper{position:relative;max-width:1270px;margin:0 auto;padding:0 20px}section{display:block;font-size:100%;}body,html{font:inherit;height:100%;margin:0;padding:0;border:0;vertical-align:baseline}html body #sitewrapper section{position:relative;min-height:500px;padding-bottom:300px}html body #sitewrapper{overflow:hidden;position:relative}@media (min-width:800px){html body #sitewrapper{margin-left:70px}}body{font-size:100%;background-color:#111!important}html body{font-family:Lato-Light;font-size:1rem;line-height:1.625rem;letter-spacing:.05em;color:#fff;background-color:#fdf8f5}html{font-size:100%;line-height:1;-webkit-text-size-adjust:100%}.contents__block.cblock1{text-align:center;max-width:700px;margin:0 auto;padding-right:20px;padding-left:20px;padding-bottom:40px}@media (min-width:768px){.contents__block.cblock1{padding-bottom:80px}}.contents__block{position:relative}h3{margin:0;padding:0 0 30px;border:0;font:inherit;vertical-align:baseline;font-size:1.125rem;line-height:1.5rem;letter-spacing:.2em;text-transform:uppercase;color:#bbb;}.headercopy{font-family:LibreBaskerville-Regular;font-size:1.125rem;line-height:2.375rem}h5{margin:0 0 20px;padding:0;border:0;font:inherit;font-size:100%;vertical-align:baseline}
+ 
   body {
     font-size: 14px;
     line-height: 22px;
@@ -33,33 +46,36 @@
     font-family: "Busorama ITC Std";
       }
   
-  h3 {
-    font-size: 32px;
-    line-height: 40px;
-    margin: 0;
-    font-family: 'Riesling', sans-serif;
-  }
   
-  h4 {
-    font-size: 18px;
-    line-height: 40px;
-    letter-spacing: 0.006em;
-    margin: 0;
-    font-family: "Busorama ITC Std";
-    color:#ffffff;
-  }
-  
-  h5 {
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.006em;
-    margin-top: 28px;
-    margin-bottom: 10px;
-    font-family: 'Times New Roman', sans-serif;
-    color:#ffffff;
-
+      h3 {
+        font-size: 1.125rem; 
+        line-height: 1.5rem; 
+        letter-spacing: 0.2em; 
+        padding-bottom: 30px;   
+        font-family: "Brilon";
+        color:var(--primary);
+        }
+      
+      h4 {
+        font-size: 18px;
+        line-height: 40px;
+        letter-spacing: 0.006em;
+        margin: 0;
+        font-family: "brilon";
+        color:var(--text-inverse);
+      }
+      
+      h5 {
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.006em;
+        margin-top: 28px;
+        margin-bottom: 10px;
+        font-family: 'Times New Roman', sans-serif;
+        color:#ffffff;
     
-  }
+        
+      }
   
   a {
     text-decoration: none;
@@ -110,7 +126,8 @@
   .content-main {
     width: 65%;
     margin: 70px 50px;
-    border: 1px solid olive;
+    border: 1px solid;
+    border-color: var(--primary);
       border-radius: 1.6rem;
       padding: 3.2rem;
       background: var(--surface);
@@ -135,20 +152,7 @@
   }
   
   .title {
-    background-image: linear-gradient(
-      to right,
-      #462523 0,
-      #cb9b51 22%,
-      #f6e27a 45%,
-      #f6f2c0 50%,
-      #f6e27a 55%,
-      #cb9b51 78%,
-      #462523 100%
-    );
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    margin: 38px 0px 0px 0px;
+     margin: 38px 0px 0px 0px;
     text-align: center;
   }
   
@@ -174,7 +178,7 @@
     padding: 32px;
     left: 592px;
     top: 254px;
-    background:var(--surface);
+    background-color: var(--bg);
     box-sizing: border-box;
     border: 1px solid;
     border-color: transparent;
@@ -185,17 +189,7 @@
   
   .card__wrapper:hover {
     border: 1px solid;
-    border-image: linear-gradient(
-        100deg,
-        #462523,
-        #cb9b51,
-        #f6e27a,
-        #f6f2c0,
-        #f6e27a,
-        #cb9b51,
-        #462523
-      )
-      1;
+    border-color:var(--border),1;
   }
   
   .card__wrapper.disabled:hover {
@@ -241,19 +235,6 @@
   }
   
   .business__contact span {
-     background-image: linear-gradient(
-      to right,
-      #462523 0,
-      #cb9b51 22%,
-      #f6e27a 45%,
-      #f6f2c0 50%,
-      #f6e27a 55%,
-      #cb9b51 78%,
-      #462523 100%
-    );
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
     font-family: "Busorama ITC Std";
   }
   
@@ -318,12 +299,12 @@
   }
   
   .steps__step.selected {
-    border: 2px solid olive;
-    color: olive;
+    border: 2px solid var(--border);
+    color: var(--primary)
   }
   
   .steps__step.selected .steps__step-title {
-    color: olive;
+    color: var(--primary)
   }
   
   .steps__step-title {
@@ -344,17 +325,12 @@
   .steps__step-name,
   .staff__card-name {
     font-size: 18px;
-    background-image: linear-gradient(100deg,
-          #462523,
-          #cb9b51,
-          #f6e27a,
-          #f6f2c0,
-          #f6e27a,
-          #cb9b51,
-          #462523);
-   -webkit-background-clip: text;
-    background-clip: text;
-    color:transparent;
+    font-family: "Brilon";
+    font-size: 18px;
+    color:var(--primary);
+    line-height: 26px;
+    letter-spacing: 0.006em;
+    font-weight: bold;
     line-height: 26px;
     letter-spacing: 0.006em;
     font-weight: bold;
@@ -374,16 +350,7 @@
   
   .staff__card:hover {
     border: 2px solid;
-    border-image: linear-gradient(
-      100deg,
-      #462523,
-      #cb9b51,
-      #f6e27a,
-      #f6f2c0,
-      #f6e27a,
-      #cb9b51,
-      #462523
-    )2; 
+    border-color: var(--border);
    }
   
   .staff__card-wrapper {
@@ -549,7 +516,7 @@
   }
   
   .sq-form-control .button.btn-primary:hover {
-    background-color: olive;
+    background-color: var(--primary)
   }
   
   .sq-form-control .button.btn-secondary {
@@ -674,18 +641,8 @@
     margin-top: 40px;
     background: #ffffff;
     border: 1px solid;
-    border-image: linear-gradient(
-        100deg,
-        #462523,
-        #cb9b51,
-        #f6e27a,
-        #f6f2c0,
-        #f6e27a,
-        #cb9b51,
-        #462523
-      )
-      1;
-          box-sizing: border-box;
+    border-image: var(--border);
+    box-sizing: border-box;
     border-radius: 12px;
     display: inline-block;
   }

@@ -1,5 +1,5 @@
 {
-  "name": "bookings-api-sample-app",
+  "name": "book.thebfe.com",
   "version": "1.0.0",
   "description": "A sample app demonstrating use of Square Bookings API",
   "main": "app.js",
@@ -15,6 +15,7 @@
     "node": ">=10"
   },
   "dependencies": {
+    "aws-sdk": "^2.1390.0",
     "body-parser": "^1.19.0",
     "commander": "^7.2.0",
     "cookie-parser": "^1.4.5",
