@@ -5,8 +5,9 @@
 @import url('https://fonts.cdnfonts.com/css/neutraface-text');
 @import url('https://fonts.cdnfonts.com/css/times-new-roman');
 @font-face {font-family: "Busorama ITC Std"; src: url("//db.onlinewebfonts.com/t/c57167369179eae9caeb41c9cfd167a0.eot"); src: url("//db.onlinewebfonts.com/t/c57167369179eae9caeb41c9cfd167a0.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/c57167369179eae9caeb41c9cfd167a0.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/c57167369179eae9caeb41c9cfd167a0.woff") format("woff"), url("//db.onlinewebfonts.com/t/c57167369179eae9caeb41c9cfd167a0.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/c57167369179eae9caeb41c9cfd167a0.svg#Busorama ITC Std") format("svg"); }
-@font-face {font-family: "Brilon"; src: local("Brilon"), url('/fonts/Brilon-Regular/Brilon-Regular.otf') format("OpenType"), src url("/fonts/Brilon-Regular/Brilon-Regular.ttf") format("truetype");}
+@font-face {font-family: "Brilon-Regular"; src: local("Brilon-Regular"), url('/fonts/Brilon-Regular/Brilon-Regular.otf') format("OpenType"), src url("/fonts/Brilon-Regular/Brilon-Regular.ttf") format("truetype");}
 @font-face {font-family: "Lato-Light";src: local("Lato-Light"), url('/fonts/Lato-Light/Lato-Light.eot') format("embedded-opentype");}
+
 html {
   font-size: 20px;
 }
@@ -61,7 +62,7 @@ html {
         line-height: 1.5rem; 
         letter-spacing: 0.2em; 
         padding-bottom: 30px;   
-        font-family: "Brilon";
+        font-family:"Brilon-Regular";
         color:var(--primary);
         }
       
@@ -70,7 +71,7 @@ html {
         line-height: 40px;
         letter-spacing: 0.006em;
         margin: 0;
-        font-family: "brilon";
+        font-family:"Brilon-Regular";
         color:var(--primary);
       }
       
@@ -334,7 +335,7 @@ html {
   .steps__step-name,
   .staff__card-name {
     font-size: 18px;
-    font-family: "Brilon";
+    font-family: "Brilon-Regular";
     font-size: 18px;
     color:var(--primary);
     line-height: 26px;
