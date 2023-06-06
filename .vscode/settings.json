@@ -1,0 +1,11 @@
+{
+    "editor.fontLigatures": true,
+    "editor.quickSuggestions": {
+        "other": "inline",
+        "strings": "inline"
+    },
+    "editor.fontFamily": "FiraCode",
+    "files.autoSave": "afterDelay",
+    "editor.defaultFormatter": "VisualStudioExptTeam.vscodeintellicode",
+
+}
