@@ -1,20 +1,12 @@
 
-@import url(https://square-fonts-production-f.squarecdn.com/square-sans.min.css);
-@import url(https://db.onlinewebfonts.com/c/c57167369179eae9caeb41c9cfd167a0?family=Busorama+ITC+Std);
+@import url('https://square-fonts-production-f.squarecdn.com/square-sans.min.css');
+@import url('https://db.onlinewebfonts.com/c/c57167369179eae9caeb41c9cfd167a0?family=Busorama+ITC+Std');
 @import url('https://fonts.cdnfonts.com/css/riesling');
 @import url('https://fonts.cdnfonts.com/css/neutraface-text');
 @import url('https://fonts.cdnfonts.com/css/times-new-roman');
 @font-face {font-family: "Busorama ITC Std"; src: url("//db.onlinewebfonts.com/t/c57167369179eae9caeb41c9cfd167a0.eot"); src: url("//db.onlinewebfonts.com/t/c57167369179eae9caeb41c9cfd167a0.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/c57167369179eae9caeb41c9cfd167a0.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/c57167369179eae9caeb41c9cfd167a0.woff") format("woff"), url("//db.onlinewebfonts.com/t/c57167369179eae9caeb41c9cfd167a0.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/c57167369179eae9caeb41c9cfd167a0.svg#Busorama ITC Std") format("svg"); }
-@font-face {
-  font-family: "Brilon";
-  src: local("Brilon"),
-    url(/fonts/Brilon-Regular/Brilon-Regular.otf) format("truetype")url("/fonts/Brilon-Regular/Brilon-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Lato-Light";
-  src: local("Lato-Light"),
-    url(/fonts/Lato-Light/Lato-Light.eot) format(embedded-opentype);
-}
+@font-face {font-family: "Brilon"; src: local("Brilon"), url('/fonts/Brilon-Regular/Brilon-Regular.otf') format("OpenType"), src url("/fonts/Brilon-Regular/Brilon-Regular.ttf") format("truetype");}
+@font-face {font-family: "Lato-Light";src: local("Lato-Light"), url('/fonts/Lato-Light/Lato-Light.eot') format("embedded-opentype");}
 html {
   font-size: 20px;
 }
