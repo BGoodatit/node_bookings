@@ -26,7 +26,8 @@
     "nodemon": "^2.0.7",
     "readline": "^1.3.0",
     "square": "^22.0.0",
-    "uuid": "^8.3.2"
+    "uuid": "^8.3.2",
+    "xterm-addon-ligatures": "^0.6.0"
   },
   "devDependencies": {
     "eslint": "^7.29.0"
