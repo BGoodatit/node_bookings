@@ -10,8 +10,8 @@
    src: local("Brilon-Regular"),
     url('/fonts/Brilon-Regular/Brilon-Regular.otf') format("OpenType"), 
     src url("/fonts/Brilon-Regular/Brilon-Regular.ttf") format("truetype"),
-    src url("/fonts/Brilon-Regular/Brilon-Regular.woff") format(woff),
-    src url("fonts/Brilon-Regular/Brilon-Regular.woff2") format(woff2);
+    src url("/fonts/Brilon-Regular/Brilon-Regular.woff") format("woff"),
+    src url("fonts/Brilon-Regular/Brilon-Regular.woff2") format("woff2");
   }
 @font-face {font-family: "Lato-Light";src: local("Lato-Light"), url('/fonts/Lato-Light/Lato-Light.eot') format("embedded-opentype");}
 html {
