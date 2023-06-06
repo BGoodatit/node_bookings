@@ -880,7 +880,7 @@ html {
      border-color: var(--primary);
        border-radius: 1.6rem;
        padding: 3.2rem;
-       background: var(--surface);
+       background: var(--bg);
        position: relative;
        box-shadow: 0.3px 0.5px 0.7px rgba(0, 0, 0, 0.08), 0.8px 1.6px 2px -0.8px rgba(0, 0, 0, 0.08), 2.1px 4.1px 5.2px -1.7px rgba(0, 0, 0, 0.08), 5px 10px 12.6px -2.5px rgba(0, 0, 0, 0.08);
    }
@@ -976,7 +976,7 @@ html {
    }
    
    .business__location span {
-     color: #ffffff;
+     color: #000000;
    }
    
    .business__contact {
@@ -1204,7 +1204,7 @@ html {
    }
    
    .availability p {
-     color: #ffffff;
+     color: #000000;
      font-size: 16px;
      line-height: 22px;
      margin-bottom: 25px;
@@ -1388,7 +1388,7 @@ html {
    .content__card {
      max-width: 500px;
      margin-top: 40px;
-     background: #ffffff;
+     background: #000000;
      border: 1px solid;
      border-image: var(--border);
      box-sizing: border-box;
@@ -1399,7 +1399,7 @@ html {
    .message-sm {
      font-size: 16px;
      line-height: 26px;
-     color: #ffffff;
+     color: #000000;
      margin-top: 8px;
    }
    
