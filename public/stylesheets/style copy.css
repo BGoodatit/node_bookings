@@ -67,7 +67,7 @@ html {
          line-height: 1.5rem; 
          letter-spacing: 0.2em; 
          padding-bottom: 30px;   
-         font-family:"Brilon-Regular";
+         font-family:"Brilon-Regular",!important;
          color:var(--primary);
          }
        
@@ -76,7 +76,7 @@ html {
          line-height: 40px;
          letter-spacing: 0.006em;
          margin: 0;
-         font-family:"Brilon-Regular";
+         font-family:"Brilon-Regular",!important;
          color:var(--primary);
        }
        
@@ -339,7 +339,7 @@ html {
    .steps__step-name,
    .staff__card-name {
      font-size: 18px;
-     font-family: "Brilon-Regular";
+     font-family: "Brilon-Regular",!important;
      font-size: 18px;
      color:var(--primary);
      line-height: 26px;
