@@ -8,7 +8,7 @@
 @font-face {
   font-family: "Brilon";
   src: local("Brilon"),
-    url(/fonts/Brilon-Regular/Brilon-Regular.otf) format("truetype");
+    url(/fonts/Brilon-Regular/Brilon-Regular.otf) format("truetype")url("/fonts/Brilon-Regular/Brilon-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Lato-Light";
@@ -16,16 +16,22 @@
     url(/fonts/Lato-Light/Lato-Light.eot) format(embedded-opentype);
 }
 html {
-  font-size: px;
+  font-size: 20px;
 }
 @media (min-width:768px) {
-  font-size: 18px;
+  html {
+    font-size: 18px;
+  }
 }
 @media (min-width:1024px) {
+  html {
   font-size: 19px;
+  }
 }
 @media (min-width:1280px) {
+  html {
   font-size: 20px;
+  }
 }
  :root{
     --bg:#111111;
