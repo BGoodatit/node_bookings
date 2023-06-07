@@ -5,10 +5,14 @@
 
 @font-face {
   font-family: 'Brilon-Regular';
-  src: url('/fonts/brilon-regular/brilon-regular-webfont.woff2') format('woff2'),
-       url('/fonts/brilon-regular/brilon-regular-webfont.woff') format('woff');
+  src: url('https://thebfe.com/assets/fonts/Brilon-Regular/brilon-regular-webfont.woff2') format('woff2'),
+       url('https://thebfe.com/assets/fonts/Brilon-Regular/brilon-regular-webfont.woff') format('woff'),
+       url('https://thebfe.com/assets/fonts/Brilon-Regular/brilon-regular.ttf') format('truetype'),
+       url('https://thebfe.com/assets/fonts/Brilon-Regular/brilon-regular.otf') format('open-type');
   font-weight: normal;
   font-style: normal;
+  unicode-range: "U+0000-U+FFFD"  on, "208/64082" on, "U+0000-U+007F 93/128" on, "U+0080-U+00FF 81/128" on, "U+0100-U+017F 3/128" on, "U+2000-U+206F 28/111" on,
+"U+20A0-U+20CF1/33" on, "U+2100-U+214F 1/80", "U+25A0-U+25FF" on;
 
 }
 @font-face {font-family: "Lato-Light";src: local("Lato-Light"), url('/fonts/Lato-Light/Lato-Light.eot') format("embedded-opentype");}
