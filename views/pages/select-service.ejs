@@ -1,116 +1,94 @@
 
-  <% include("../functions") %>
-  <html>
-    <head>
-      <title>Services | The Boyfriend Experience</title>
-      <meta charset="UTF-8">
-      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">.
-      <meta name="HandheldFriendly" content="True">
-      <meta name="MobileOptimized" content="320">
-      <meta name="mobile-web-app-capable" content="yes">
-      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
-      <link rel="pingback" href="#">
-      <link href="/stylesheets/style.css" rel="stylesheet" type="text/css">
-      <link type="text/css" href="../wp-content/themes/cwiz-wp-theme/style.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-      <!--[if lt IE 9]>
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
-            <![endif]-->
-    
-      <script type="text/javascript">
-                    var _setInit = true;
-                    var _getDomainName = '../index.html';
-                    var _getStylesheetDirectoryUri = '../wp-content/themes/cwiz-wp-theme/index.html';  </script>
-      <script id="cwiz-bundle" type="text/javascript" src="../wp-content/themes/cwiz-wp-theme/js/libs.bundle.js"></script>
-      <meta name='robotQ1s' content='max-image-preview:large'><!-- This site is optimized with the Yoast SEO Premium plugin v13.5 - https://yoast.com/wordpress/plugins/seo/ -->
-      <meta name="description" content="View a list of services offered by The Boyfriend Experience.">
-      <meta property="og:locale" content="en_US">
-      <meta property="og:type" content="article">
-      <meta property="og:title" content="Services | the Boyfriend Experience">
-      <meta property="og:description" content="View a list of services offered by The Boyfriend Experience.">
-      <meta property="og:url" content="https://thebeauxartsdigital.com/services/">
-      <meta property="og:site_name" content="The Boyfriend Experience">
-      <meta name="twitter:card" content="summary">
-      <meta name="twitter:description" content="View a list of services offered by The Boyfriend Experience.">
-      <meta name="twitter:title" content="Services | the Boyfriend Experience">
-      <!-- / Yoast SEO Premium plugin. -->
-      <link rel='dns-prefetch' href='http://s.w.org/'>
-      <script type='text/javascript' src='/wp-includes/js/jquery/jquery.min9d52.js?ver=3.5.1' id='jquery-core-js'></script>
-      <script type='text/javascript' src='/wp-includes/js/jquery/jquery-migrate.mind617.js?ver=3.3.2' id='jquery-migrate-js'></script>
-    <link href="/stylesheets/style.css" rel="stylesheet" type="text/css">
+<% include("../functions") %>
+<html>
+  <head>
+    <title>Services | The Boyfriend Experience</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <link href="/stylesheets/style.css" rel="stylesheet" type="text/css">
+    <link type="text/css" href="../wp-content/themes/cwiz-wp-theme/style.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <script type="text/javascript">
+                  var _setInit = true;
+                  var _getDomainName = '../index.html';
+                  var _getStylesheetDirectoryUri = '../wp-content/themes/cwiz-wp-theme/index.html';  </script>
+    <script id="cwiz-bundle" type="text/javascript" src="../wp-content/themes/cwiz-wp-theme/js/libs.bundle.js"></script>
+    <script type='text/javascript' src='/wp-includes/js/jquery/jquery.min9d52.js?ver=3.5.1' id='jquery-core-js'></script>
+    <script type='text/javascript' src='/wp-includes/js/jquery/jquery-migrate.mind617.js?ver=3.3.2' id='jquery-migrate-js'></script>
+  <link href="/stylesheets/style.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
 
-    <link rel="stylesheet" href="/stylesheets/style.css" />
-  </head>
-  
-  <body>
-    <header>
-      <%- include("../partials/header") %>
-    </header>
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+
+</head>
+
+<body>
+  <header>
+    <%- include("../partials/header") %>
+  </header>
 
 <body class="page-template page-template-page-Services page-template-page-Services-php page page-id-15 services">
-      <div class="contents__wrapper">
-        <div class="contents__block cblock1">
-          <h5>SERVICES</h5>
-          <div class="headercopy">
-            <p>My hourly rate is two hundred fifty dollars ($250) plus any travel expenses for outcall (i.e., Uber, Lyft, travel). Three-hour sessions are seven hundred fifty dollars ($750), and overnight rates are one thousand five hundred dollars ($1,500).</p>
-          </div>
+    <div class="contents__wrapper">
+      <div class="contents__block cblock1">
+        <h5>SERVICES</h5>
+        <div class="headercopy">
+          <p>My hourly rate is two hundred fifty dollars ($250) plus any travel expenses for outcall (i.e., Uber, Lyft, travel). Three-hour sessions are seven hundred fifty dollars ($750), and overnight rates are one thousand five hundred dollars ($1,500).</p>
         </div>
-        <div class="contents__block cblock2">
-          <ul class="grid-items">
-          <% items.forEach(function(item) { %>
-          <% item.itemData.variations.forEach(function(variation) { %>
-            <a href="/staff/<%= variation.id %>?version=<%= variation.version %>">
-              <div class="card__wrapper">
-                <div class="card__info">
-                  <h4><%= item.itemData.name %> - <%= variation.itemVariationData.name %></h4>
-                  <h5 class="card__description"><%= item.itemData.description %></h5>
-                  <span class="card__details">
-                    <%if (variation.itemVariationData.pricingType === "FIXED_PRICING") { %>
-                      <%= formatMoney(variation.itemVariationData.priceMoney.amount, variation.itemVariationData.priceMoney.currency) %>
-                    <% } else { %>
-                      Price Varies
-                    <% } %>
-                    • <%= formatTime(variation.itemVariationData.serviceDuration) %>
-                    </span>
-                </div>
-                <span class="card__icon"></span>
-                <img src="images/side-caret.svg">
-              </div>
-            </a>
-          <%}); %>
-        <%}); %>
-        <% if (!items.length) {%>
-          <div class="card__wrapper disabled"></div>
-        <% } %>
       </div>
+        <ul class="items">
+        <% items.forEach(function(item) { %>
+        <% item.itemData.variations.forEach(function(variation) { %>
+          <a class="item" href="/staff/<%= variation.id %>?version=<%= variation.version %>">
+            <div class="card__wrapper">
+              <div class="card__info">
+                <h4><%= item.itemData.name %> - <%= variation.itemVariationData.name %></h4>
+                <h5 class="card__description bodycopy" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><%= item.itemData.description %></h5>
+                <span class="card__details">
+                  <%if (variation.itemVariationData.pricingType === "FIXED_PRICING") { %>
+                    <%= formatMoney(variation.itemVariationData.priceMoney.amount, variation.itemVariationData.priceMoney.currency) %>
+                  <% } else { %>
+                    Price Varies
+                  <% } %>
+                  • <%= formatTime(variation.itemVariationData.serviceDuration) %>
+                  </span>
+              </div>
+              <span class="card__icon"></span>
+              <img src="images/side-caret.svg">
+            </div>
+          </a>
+        <%}); %>
+      <%}); %>
+      <% if (!items.length) {%>
+        <div class="card__wrapper disabled"></div>
+      <% } %>
     </div>
   </div>
-  <% if (!items.length) {%>
-    <div class="developer-note">
-      <div>
-        <h5>Developer note</h5>
-        <span>Looks like you don’t have any services setup yet. Run the seeding script or use the 
-          <a href="https://developer.squareup.com/explorer/square/catalog-api/upsert-catalog-object" target="_blank">API Explorer</a> or the Seller Dashboard for your environment
-          to create your first service. For more information, check our README file.
-        </span>
+</div>
+<% if (!items.length) {%>
+  <div class="developer-note">
+    <div>
+      <h5>Developer note</h5>
+      <span>Looks like you don’t have any services setup yet. Run the seeding script or use the 
+        <a href="https://developer.squareup.com/explorer/square/catalog-api/upsert-catalog-object" target="_blank">API Explorer</a> or the Seller Dashboard for your environment
+        to create your first service. For more information, check our README file.
+      </span>
+    </div>
+  </div>
+<% } %>
+        </ul>
       </div>
     </div>
-  <% } %>
-          </ul>
-        </div>
-      </div>
-    </section>
-	    <!-- contents end -->
+  </section>
+    <!-- contents end -->
 
-		
-    <script id="cwiz-app" type="text/javascript" src="../wp-content/themes/cwiz-wp-theme/js/app.js"></script> 
-    <script>
-    (function () { var s = document.createElement('script'), e = !document.body ? document.querySelector('head') : document.body; s.src = 'https://acsbapp.com/apps/app/dist/js/app.js'; s.async = true; s.onload = function () { acsbJS.init({ statementLink: '', footerHtml: '', hideMobile: false, hideTrigger: false, language: 'en', position: 'right', leadColor: '#146FF8', triggerColor: '#146FF8', triggerRadius: '50%', triggerPositionX: 'right', triggerPositionY: 'bottom', triggerIcon: 'people', triggerSize: 'medium', triggerOffsetX: 20, triggerOffsetY: 20, mobile: { triggerSize: 'small', triggerPositionX: 'right', triggerPositionY: 'center', triggerOffsetX: 0, triggerOffsetY: 0, triggerRadius: '50%' } }); }; e.appendChild(s); }());
-    </script> 
-    <script type='text/javascript' src='../wp-content/plugins/advanced-custom-fields-viewer/js/acfv-frontendd988.js?ver=5.7.8' id='acfv_frontend_js-js'></script> 
-    
+  
+  <script id="cwiz-app" type="text/javascript" src="../wp-content/themes/cwiz-wp-theme/js/app.js"></script> 
+  <script>
+  (function () { var s = document.createElement('script'), e = !document.body ? document.querySelector('head') : document.body; s.src = 'https://acsbapp.com/apps/app/dist/js/app.js'; s.async = true; s.onload = function () { acsbJS.init({ statementLink: '', footerHtml: '', hideMobile: false, hideTrigger: false, language: 'en', position: 'right', leadColor: '#146FF8', triggerColor: '#146FF8', triggerRadius: '50%', triggerPositionX: 'right', triggerPositionY: 'bottom', triggerIcon: 'people', triggerSize: 'medium', triggerOffsetX: 20, triggerOffsetY: 20, mobile: { triggerSize: 'small', triggerPositionX: 'right', triggerPositionY: 'center', triggerOffsetX: 0, triggerOffsetY: 0, triggerRadius: '50%' } }); }; e.appendChild(s); }());
+  </script> 
+  <script type='text/javascript' src='../wp-content/plugins/advanced-custom-fields-viewer/js/acfv-frontendd988.js?ver=5.7.8' id='acfv_frontend_js-js'></script> 
+  
 
-		 
-	  </body>
-  </html>
+   
+  </body>
+</html>
+
