@@ -31,7 +31,10 @@
       <div class="contents__block cblock1">
         <h5>SERVICES</h5>
         <div class="headercopy">
-          <p>My hourly rate is two hundred fifty dollars ($250) plus any travel expenses for outcall (i.e., Uber, Lyft, travel). Three-hour sessions are seven hundred fifty dollars ($750), and overnight rates are one thousand five hundred dollars ($1,500).</p>
+         <%if (location.description) { %>
+        <h5> <%= location.description %> </h5>
+      <% } %>
+          <!--<p>My hourly rate is two hundred fifty dollars ($250) plus any travel expenses for outcall (i.e., Uber, Lyft, travel). Three-hour sessions are seven hundred fifty dollars ($750), and overnight rates are one thousand five hundred dollars ($1,500).</p>-->
         </div>
       </div>
         <ul class="items">
