@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="288" height="196" viewbox="0 0 1024 768" xml:space="preserve">
   <defs>
-<!--<style>
+<style>
             svg path,
             svg text {
                 fill: black;
@@ -14,7 +14,7 @@
                     fill: white;
                 }
             }
-        </style>-->
+        </style>
     <filter id="c" x="-50%" y="-50%" width="200%" height="200%">
       <fegaussianblur id="a" in="SourceGraphic" stddeviation="5"/>
     </filter>
