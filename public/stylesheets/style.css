@@ -44,7 +44,7 @@ html {
 
 @media (prefers-color-scheme: dark){
   :root{
-    --bg:#111111;
+    --bg:transparent;
       --border: #22272B;
       --surface: #161A1D;
       --text-primary: #DEE4EA;
@@ -840,7 +840,7 @@ html {
 
  @media (prefers-color-scheme: light){
   :root{
-     --bg:#f6efef;
+     --bg:transparent;
        --border: #;
        --surface: #d5dbdc;
        --text-primary: #151414;
