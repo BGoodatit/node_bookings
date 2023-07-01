@@ -6,13 +6,13 @@
 @font-face {
   font-family: "Brilon";
   src: local("Brilon"),
-    url(/assets/fonts/Brilon-Regular/Brilon-Regular.otf) format("truetype");
+    url(/fonts/Brilon-Regular/Brilon-Regular.otf) format("truetype");
 }
 
 @font-face {
   font-family: "Brilon-regular";
   src: local("Brilon"),
-    url('/assets/fonts/Brilon-Regular/Brilon-Regular.otf') format("truetype"),
+    url('/fonts/Brilon-Regular/Brilon-Regular.otf') format("truetype"),
     src: url('https://thebfe.com/assets/fonts/Brilon-Regular/brilon-regular-webfont.woff2') format('woff2'),
     url('https://thebfe.com/assets/fonts/Brilon-Regular/brilon-regular-webfont.woff') format('woff'),
     url('https://thebfe.com/assets/fonts/Brilon-Regular/brilon-regular.ttf') format('truetype'),
