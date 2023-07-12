@@ -145,26 +145,7 @@
   <link rel="alternate" hreflang="es-MX" href="es/index.html">
   <link rel="stylesheet" href="https://thebfe.com/assets/styles/index.css">
   <script type="text/javascript" src="http://typesquare.com/3/tsst/script/ja/typesquare.js?6364b96a56244ea28c8961a0ac1e02e5&amp;fadein=-1" charset="utf-8"></script>
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link href="/stylesheets/datepicker.css" rel="stylesheet" type="text/css">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
-    $(function() {
-      $("#datepicker").datepicker({
-        beforeShowDay: function(date) {
-          return datePickerHandler.isSelectable(date);
-        },
-        dateFormat: 'yy-mm-dd',
-        minDate: 0,
-        maxDate: "30d"
-      });
-      $("#datepicker").on("change", function() {
-        datePickerHandler.selectNewDate($(this).val());
-      })
-    });
-  </script>
-  <script src="/js/date-picker-handler.js"></script>
+
 </head>
 
 <body data-page-type="news">
@@ -242,142 +223,135 @@
             <div class="c-section-content">
               <div class="ne-header__wrapper">
                 <div class="ne-header__content">
-                  <h1 class="c-subPageTitle is-waiting js-subPageTitle">
-                    <span class="_frame">
-                      <span class="_title" style="Font-family:Brilon-regular;">
-                        <span class="u-pc" style="font-size: 7rem;"> Availability</span>
-                        <span class="u-sp" style="font-size:3.5rem;">Availability </span>
+                    <h1 class="c-subPageTitle is-waiting js-subPageTitle">
+                      <span class="_frame">
+                        <span class="_title" style="Font-family:Brilon-regular;">
+                         <span class="u-pc" style="font-size: 7rem;"> availability</span>
+                         <span class="u-sp" style="font-size:6rem;">bing </span>
+                        </span>
                       </span>
-                    </span>
-                  </h1>
+                    </h1>
+                  </div>
                 </div>
               </div>
+            
+                   
+                 
             </div>
-
+          </section>
         </div>
-        </section>
-      </div>
 
-      <div class="ne__body js-sectionBg" data-scroll-section data-section-bg="white">
-        <section class="ne-body js-newsIndex">
-          <div class="c-section-content">
-            <div class="ne-body__wrapper">
-              <div class="ne-body__content" font-size="min(max(16px, 4vw), 22px);">
-                <dl class="ne-yearList js-newsList">
-                  <div id="news-in-2022" class="ne-yearList__year  js-newsYearItem">
-                    <dt class="_year u-pc is-inview" data-scroll="" data-scroll-sticky="" data-scroll-target="#news-in-2022" style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
-                      <div data-scroll="" data-scroll-speed="-1.1" class="is-inview" style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 32.0014, 0, 1);">
-                        <a class="button" href="/staff/<%= serviceId %>?version=<%= serviceVersion %>"><span class="icon back-arrow"></span> Back</a>
-                        <div class="steps">
-                          <div class="steps__step">
-                            <div class="steps__step-wrapper">
-                              <div class="steps__step-title">
-                                <a href="/services">Edit</a>
-                              </div>
-                              <div class="steps__step-body">
-                                <div class="steps__step-name">
-                                  <%= serviceItem.itemData.name %>
-                                </div>
-                                <div class="steps__step-description">
-                                  <%= formatTime(serviceVariation.itemVariationData.serviceDuration) %>
-                                </div>
-                              </div>
-                            </div>
+        <div class="ne__body js-sectionBg" data-scroll-section data-section-bg="white">
+          <section class="ne-body js-newsIndex">
+            <div class="c-section-content">
+              <div class="ne-body__wrapper">
+                <div class="ne-body__content" font-size="min(max(16px, 4vw), 22px);">
+                  <dl class="ne-yearList js-newsList">
+                    <div id="news-in-2022" class="ne-yearList__year  js-newsYearItem">
+                      <dt class="_year u-pc is-inview" data-scroll="" data-scroll-sticky="" data-scroll-target="#news-in-2022" style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
+                        <div data-scroll="" data-scroll-speed="-1.1" class="is-inview" style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 32.0014, 0, 1);">
+                         <a class="button" href="/staff/<%= serviceId %>?version=<%= serviceVersion %>"><span class="icon back-arrow"></span> Back</a>
+                  <div class="steps">
+                    <div class="steps__step">
+                      <div class="steps__step-wrapper">
+                        <div class="steps__step-title">
+                          <a href="/services">Edit</a>
+                        </div>
+                        <div class="steps__step-body">
+                          <div class="steps__step-name">
+                            <%= serviceItem.itemData.name %>
                           </div>
-                          <div class="steps__step">
-                            <div class="steps__step-wrapper">
-                              <div class="steps__step-title">
-                                <a href="/staff/<%= serviceId %>?version=<%= serviceVersion %>">Edit</a>
-                              </div>
-                              <div class="availability-staff__card-wrapper">
-                                <div class="staff__card-picture-wrapper">
-                                  <% if (locals.bookingProfile && bookingProfile.profileImageUrl) { %>
-                                  <img src="<%= bookingProfile.profileImageUrl %>" />
-                                  <% } else if (locals.bookingProfile) { %>
-                                  <%= getStaffInitials(bookingProfile.displayName) %>
-                                  <% } else { %>
-                                  <%= getStaffInitials("any") %>
-                                  <% } %>
-                                </div>
-                                <div class="steps__staff-step-body">
-                                  <div class="steps__step-name">
-                                    <% if (locals.bookingProfile) { %>
-                                    <%= bookingProfile.displayName %>
-                                    <% } else { %>
-                                    Any staff member
-                                    <% } %>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
+                          <div class="steps__step-description">
+                            <%= formatTime(serviceVariation.itemVariationData.serviceDuration) %>
                           </div>
-                          <div class="steps__step selected">
-                            <div class="steps__step-wrapper">
-                              <div class="steps__step-title">
-                                <span>time</span>
-                                <span class="icon side-caret-selected"></span>
-                              </div>
-                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="steps__step">
+                      <div class="steps__step-wrapper">
+                        <div class="steps__step-title">
+                          <a href="/staff/<%= serviceId %>?version=<%= serviceVersion %>">Edit</a>
+                        </div>
+                        <div class="availability-staff__card-wrapper">
+                          <div class="staff__card-picture-wrapper">
+                            <% if (locals.bookingProfile && bookingProfile.profileImageUrl) { %>
+                            <img src="<%= bookingProfile.profileImageUrl %>" />
+                            <% } else if (locals.bookingProfile) { %>
+                            <%= getStaffInitials(bookingProfile.displayName) %>
+                            <% } else { %>
+                            <%= getStaffInitials("any") %>
+                            <% } %>
                           </div>
-                          <div class="steps__step">
-                            <div class="steps__step-wrapper">
-                              <div class="steps__step-title">
-                                <span>Enter your details</span>
-                              </div>
+                          <div class="steps__staff-step-body">
+                            <div class="steps__step-name">
+                              <% if (locals.bookingProfile) { %>
+                              <%= bookingProfile.displayName %>
+                              <% } else { %>
+                              Any staff member
+                              <% } %>
                             </div>
                           </div>
                         </div>
-                    </dt>
-
-                    <!-- News list in the year -->
-
-                    <div class="availability">
-                      <h4> Select desired date </h4>
-                      <div id="datepicker"></div>
-                      <h4> Available Times </h4>
-
-                      <div id="available-times">
                       </div>
                     </div>
-                    <script>
-                      const datePickerHandler = new DatePickerHandler( < % -stringifyJSON(availabilities) % > , "<%- serviceId %>", "<%- serviceVersion %>", "<%- locals.bookingId %>", "<%- location.timezone %>");
-                    </script>
-                  </div>
-
-                </dl>
-              </div>
-        </section>
-      </div>
-
-      <div class="nf__footer js-sectionBg" data-scroll-section="" data-section-bg="white" data-scroll-section-id="section5" data-scroll-section-inview="" style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); opacity: 1; pointer-events: all;">
-        <section class="nf-footer">
-          <div class="c-section-content">
-            <div class="nf-footer__wrapper">
+                    <div class="steps__step selected">
+                      <div class="steps__step-wrapper">
+                        <div class="steps__step-title">
+                          <span>time</span>
+                          <span class="icon side-caret-selected"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="steps__step">
+                      <div class="steps__step-wrapper">
+                        <div class="steps__step-title">
+                          <span>Enter your details</span>
+                        </div>
+                      </div>
+                    </div>
+                              </div>
+                      </dt>
+                  
+                      <!-- News list in the year -->
+                  
+                     
+                  
+                           <%- include('../partials/date-selector', { availabilities }); %>
+                        
+                    </div>
+                  
+                  </dl>
+                </div>
+              </section>      </div>
+              
+              <div class="nf__footer js-sectionBg" data-scroll-section="" data-section-bg="white" data-scroll-section-id="section5" data-scroll-section-inview="" style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); opacity: 1; pointer-events: all;">
+              <section class="nf-footer">
+              <div class="c-section-content">
+              <div class="nf-footer__wrapper">
               <div class="nf-footer__content">
-
-                <a class="nf-footer__backLink" href="index.html" data-swup-preload="">
-                  <span class="_arrow"><span class="c-arrowRight">
-                      <span class="_bar1"></span>
-                      <span class="_bar2"></span>
-                      <span class="_triangle"><img src="https://thebfe.com/assets/svg/common/arrow-small-black.svg" alt="" class=""></span>
-                    </span></span>
-                  <span class="_label">
-                    <span class="c-stackedText">
-                      <span class="_label1">Back to Home</span>
-                      <span class="_label2">Back to Home</span>
-                    </span></span>
-                </a>
-
+              
+              <a class="nf-footer__backLink" href="index.html" data-swup-preload="">
+              <span class="_arrow"><span class="c-arrowRight">
+              <span class="_bar1"></span>
+              <span class="_bar2"></span>
+              <span class="_triangle"><img src="https://thebfe.com/assets/svg/common/arrow-small-black.svg" alt="" class=""></span>
+              </span></span>
+              <span class="_label">
+              <span class="c-stackedText">
+              <span class="_label1">Back to Home</span>
+              <span class="_label2">Back to Home</span>
+              </span></span>
+              </a>
+              
               </div>
-            </div>
-          </div>
-        </section>
-      </div>
-      <!-- contents end -->
-      <div class="l-footer js-sectionBg" data-scroll-section data-section-bg="gray">
-        <footer class="c-footer js-footer">
-          <div class="c-section-content">
-            <div class="c-footer__wrapper">
+              </div>
+              </div>
+              </section>  </div>
+              <!-- contents end -->
+              <div class="l-footer js-sectionBg" data-scroll-section data-section-bg="gray">
+              <footer class="c-footer js-footer">
+              <div class="c-section-content">
+              <div class="c-footer__wrapper">
               <div class="c-footer__bg js-footerBg">
                 <picture>
                   <source srcset="https://thebfe.com/assets/img/footer/h-dark.png" media="(prefers-color-scheme: dark)"> <img class="_h" src="https://thebfe.com/assets/img/footer/h.png" alt="Light Mode Image">
@@ -430,24 +404,24 @@
                   </ul>
                   <p class="c-footer__copyright">© 2022 the Boyfriend
                     Experience</p><a class="c-footer__toTopLink js-toTop" href="#"><span class="_arrow"><span class="c-arrowRight">
-                        <span class="_bar1"></span>
-                        <span class="_bar2"></span>
-                        <span class="_triangle"><img src="https://thebfe.com/assets/svg/common/arrow-small-black.svg" alt="" class=""></span>
-                      </span></span>Page top</a>
+                      <span class="_bar1"></span>
+                      <span class="_bar2"></span>
+                      <span class="_triangle"><img src="https://thebfe.com/assets/svg/common/arrow-small-black.svg" alt="" class=""></span>
+                    </span></span>Page top</a>
                 </div>
               </nav>
-            </div>
-          </div>
-        </footer>
-      </div>
-    </div>
-    <!-- END: scroll container -->
-    <!-- Menu -->
-    <div class="l-menu">
-      <nav class="c-menuPanel is-hidden js-menuPanel">
-        <div class="c-section-content">
-          <div class="c-menuPanel__wrapper">
-            <div class="c-menuPanel__content js-menuContent">
+              </div>
+              </div>
+              </footer>
+              </div>
+              </div>
+              <!-- END: scroll container -->
+              <!-- Menu -->
+              <div class="l-menu">
+              <nav class="c-menuPanel is-hidden js-menuPanel">
+              <div class="c-section-content">
+              <div class="c-menuPanel__wrapper">
+              <div class="c-menuPanel__content js-menuContent">
               <div class="c-menu">
                 <div class="c-menu__links">
                   <ul class="c-menu__linkList">
@@ -494,62 +468,62 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </div>
-    </div>
-  </main>
-  <!-- END: pjax container -->
-  <!-- Opening -->
-  <div class="l-opening">
-    <div class="c-opening js-opening">
-      <video class="c-opening__video js-openingVideo" src="https://thebfe.com/assets/videos/opening.mov" muted playsinlinedata-sp-src="https://thebfe.com/assets/videos/opening-sp.mp4"></video>
-    </div>
-  </div>
-  <!-- Cursor -->
-  <div class="l-cursor">
-    <div class="c-cursor is-inactive js-cursor">
-      <div class="c-cursor__normal"><img src="https://thebfe.com/assets/svg/cursor/heart.svg" alt></div>
-
-      <div class="c-cursor__clickEffect">
-        <span class="_lineWrapper">
-          <span class="_line"></span>
-        </span>
-        <span class="_lineWrapper">
-          <span class="_line"></span>
-        </span>
-        <span class="_lineWrapper">
-          <span class="_line"></span>
-        </span>
-        <span class="_lineWrapper">
-          <span class="_line"></span>
-        </span>
-        <span class="_lineWrapper">
-          <span class="_line"></span>
-        </span>
-        <span class="_lineWrapper">
-          <span class="_line"></span>
-        </span>
-        <span class="_lineWrapper">
-          <span class="_line"></span>
-        </span>
-        <span class="_lineWrapper">
-          <span class="_line"></span>
-        </span>
-      </div>
-    </div>
-  </div>
-  <!-- Transition animation -->
-  <div class="l-transition">
-    <div class="_inner js-pageTransition"></div>
-  </div>
-
-  <!-- Window size -->
-  <div class="l-windowSize js-windowSize"></div>
-
-  <script src="https://thebfe.com/assets/scripts/main.js"></script>
-</body>
-
-</html>
+              </div>
+              </div>
+              </div>
+              </nav>
+              </div>
+              </div>
+              </main>
+              <!-- END: pjax container -->
+              <!-- Opening -->
+              <div class="l-opening">
+              <div class="c-opening js-opening">
+              <video class="c-opening__video js-openingVideo" src="https://thebfe.com/assets/videos/opening.mov" muted playsinlinedata-sp-src="https://thebfe.com/assets/videos/opening-sp.mp4"></video>
+              </div>
+              </div>
+              <!-- Cursor -->
+              <div class="l-cursor">
+              <div class="c-cursor is-inactive js-cursor">
+              <div class="c-cursor__normal"><img src="https://thebfe.com/assets/svg/cursor/heart.svg" alt></div>
+              
+              <div class="c-cursor__clickEffect">
+              <span class="_lineWrapper">
+              <span class="_line"></span>
+              </span>
+              <span class="_lineWrapper">
+              <span class="_line"></span>
+              </span>
+              <span class="_lineWrapper">
+              <span class="_line"></span>
+              </span>
+              <span class="_lineWrapper">
+              <span class="_line"></span>
+              </span>
+              <span class="_lineWrapper">
+              <span class="_line"></span>
+              </span>
+              <span class="_lineWrapper">
+              <span class="_line"></span>
+              </span>
+              <span class="_lineWrapper">
+              <span class="_line"></span>
+              </span>
+              <span class="_lineWrapper">
+              <span class="_line"></span>
+              </span>
+              </div>
+              </div>
+              </div>
+              <!-- Transition animation -->
+              <div class="l-transition">
+              <div class="_inner js-pageTransition"></div>
+              </div>
+              
+              <!-- Window size -->
+              <div class="l-windowSize js-windowSize"></div>
+              
+              <script src="https://thebfe.com/assets/scripts/main.js"></script>
+              </body>
+              
+              </html>
