@@ -284,7 +284,7 @@
                           <% items.forEach(function(item) { %>
                           <% item.itemData.variations.forEach(function(variation) { %>
                           <li class="ne-list__item  js-newsItem">
-                            <a class="ne-list__itemlink" href="/staff/<%= variation.id %>?version=<%= variation.version %>" data-swup-preload="">
+                            <a class="ne-list__itemlink _link c-hoverTransparent" href="/staff/<%= variation.id %>?version=<%= variation.version %>" data-swup-preload="">
                               <div class="ne-news">
                                 <div class="ne-news__text">
                                   <p class="_title" style="font-family: Brilon-Regular, serif;"><%= item.itemData.name %> - <%= variation.itemVariationData.name %> </p>
@@ -325,7 +325,8 @@
               </ul>
               </dd>
             </div>
-            </dl>
+            
+          </dl>
 
         </div>
       </section>      </div>
